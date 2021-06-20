@@ -35,6 +35,67 @@ body {
   transform: scale(1.05);
 }
 
+
+
+/* CARD TWO */
+
+.card-two .card-body {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* .card-two .card-body:hover {
+  cursor: pointer;
+} */
+
+.card-two:hover .card-text {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-out;
+}
+
+.card-two:hover .card-title {
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.go-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #00838d;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px 0 0 0;
+}
+
+.go-arrow {
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+}
+
+.card-two .card-body:after {
+  content: "";
+  position: absolute;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  bottom: -16px;
+  right: -16px;
+  border-radius: 32px;
+  z-index: -1;
+  transform: scale(1);
+  transition: transform 0.25s ease-out;
+}
+
+.card-two:hover .card-body:after {
+  transform: scale(25);
+}
+
+/* MEDIA */
+
 @media (min-width: 768px) {
   .card {
     margin-top: 100px;
