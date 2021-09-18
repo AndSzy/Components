@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">Bootstrap Table with expandable row</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- table-sm to make table more compact -->
+                <table class="table table-hover">
+                    <thead>
+                        <th>Academic Year</th>
+                        <th>Class</th>
+                        <th>Name</th>
+                        <th>Rent Per Week</th>
+                        <th>Currency</th>
+                        <th>En-Suit</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr class="first-row">
+                            <td>2019/2020</td>
+                            <td>Null</td>
+                            <td>Golden Room</td>
+                            <td>160</td>
+                            <td>Pound</td>
+                            <td>Yes</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td colspan=7>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            name:
+                                        </div>
+                                        <div class="col-6">
+                                            Marek
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="first-row">
+                            <td>2019/2020</td>
+                            <td>Flat</td>
+                            <td>Flat</td>
+                            <td>180</td>
+                            <td>Pound</td>
+                            <td>Yes</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr class="hidden-row d-none">
+                            <td colspan=7>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            name:
+                                        </div>
+                                        <div class="col-6">
+                                            Marek
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="first-row">
+                            <td>2017/2018</td>
+                            <td>Null</td>
+                            <td>Standard</td>
+                            <td>125</td>
+                            <td>Pound</td>
+                            <td>No</td>
+                            <td>Null</td>
+                        </tr>
+                        <tr class="hidden-row d-none">
+                            <td colspan=7>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            name:
+                                        </div>
+                                        <div class="col-6">
+                                            Marek
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+    
+
+</html>
