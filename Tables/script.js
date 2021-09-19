@@ -9,7 +9,7 @@ firstRows.forEach((row) => {
 			let mydiv = sibling.querySelector('.hidden-div');
 			mytd.classList.toggle('p-0');
 			mydiv.classList.toggle('hide-div');
-			chevronIcon.classList.toggle('fa-rotate-270');
+			chevronIcon.classList.toggle('rotate');
         }
     })
 })

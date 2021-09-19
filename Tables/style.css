@@ -18,3 +18,13 @@
     visibility: visible;
     transition: visibility 0.2s 0.2s, height 0.2s linear;
 }
+
+.fa-chevron-down {
+    transition: all 0.2s linear; 
+}
+
+.fa-chevron-down.rotate {
+    transform: rotate(-90deg);
+    transition: all 0.2s linear;
+}
+
