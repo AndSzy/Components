@@ -1,35 +1,22 @@
-// nextElementSibling
 const firstRows = document.querySelectorAll('.first-row');
 
 firstRows.forEach((row) => {
     row.addEventListener('click', () => {
-
+		let chevronIcon = row.querySelector('.fa-chevron-down')
         let sibling = getNextSibling(row, '.hidden-row');
-
         if (sibling) {
-            sibling.classList.toggle('d-none');
+			let mytd = sibling.querySelector('td');
+			let mydiv = sibling.querySelector('.hidden-div');
+			mytd.classList.toggle('p-0');
+			mydiv.classList.toggle('hide-div');
+			chevronIcon.classList.toggle('fa-rotate-270');
         }
-
-        
-
-        // row.nextElementSibling.classList.toggle('d-none');
     })
 })
 
 
 function getNextSibling (elem, selector) {
-
-	// Get the next sibling element
-	var sibling = elem.nextElementSibling;
-
-	// If there's no selector, return the first sibling
+	let sibling = elem.nextElementSibling;
 	if (!selector) return sibling;
-
-	// If the sibling matches our selector, use it
-	// If not, jump to the next sibling and continue the loop
-	while (sibling) {
-		if (sibling.matches(selector)) return sibling;
-		sibling = sibling.nextElementSibling
-	}
-
+	if (sibling.matches(selector)) return sibling;
 };

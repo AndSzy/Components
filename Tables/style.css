@@ -1,3 +1,20 @@
 .table tbody tr:hover {
     cursor: pointer;
 }
+/* Hidden row styling */
+.container.hidden-div {
+    padding: 0;
+}
+
+/* Transition during showing/hiding hidden row */
+.hidden-row .hidden-div.hide-div {
+    visibility: hidden;
+    transition: visibility 0s, height 0.2s linear;
+    height: 0;
+}
+
+.hidden-row .hidden-div {
+    height: 24px;
+    visibility: visible;
+    transition: visibility 0.2s 0.2s, height 0.2s linear;
+}

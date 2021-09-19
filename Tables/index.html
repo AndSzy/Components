@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88e3276c80.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Tables</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-12">
-                <p class="text-center">Bootstrap Table with expandable row</p>
+                <h5 class="text-center">Bootstrap Table with expandable rows</h5>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
             <div class="col-12">
                 <!-- table-sm to make table more compact -->
                 <table class="table table-hover">
                     <thead>
-                        <th>Academic Year</th>
+                        <th class="ps-4">Academic Year</th>
                         <th>Class</th>
                         <th>Name</th>
                         <th>Rent Per Week</th>
@@ -32,7 +33,7 @@
                     </thead>
                     <tbody>
                         <tr class="first-row">
-                            <td>2019/2020</td>
+                            <td><i class="fas fa-chevron-down me-2"></i>2019/2020</td>
                             <td>Null</td>
                             <td>Golden Room</td>
                             <td>160</td>
@@ -40,22 +41,27 @@
                             <td>Yes</td>
                             <td>Good</td>
                         </tr>
+
                         <tr class="hidden-row">
-                            <td colspan=7>
-                                <div class="container">
+                            <td class="p-0" colspan=8>
+                                <div class="container hidden-div hide-div">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-2">
                                             name:
                                         </div>
-                                        <div class="col-6">
-                                            Marek
+                                        <div class="col-2">
+                                            MarekDIV
+                                        </div>
+                                        <div class="col-8">
+                                            <!-- MarekDIV -->
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
+
                         <tr class="first-row">
-                            <td>2019/2020</td>
+                            <td><i class="fas fa-chevron-down me-2"></i>2019/2020</td>
                             <td>Flat</td>
                             <td>Flat</td>
                             <td>180</td>
@@ -63,22 +69,24 @@
                             <td>Yes</td>
                             <td>Good</td>
                         </tr>
-                        <tr class="hidden-row d-none">
-                            <td colspan=7>
-                                <div class="container">
+
+                        <tr class="hidden-row">
+                            <td class="p-0" colspan=7>
+                                <div class="container hidden-div hide-div">
                                     <div class="row">
                                         <div class="col-6">
                                             name:
                                         </div>
                                         <div class="col-6">
-                                            Marek
+                                            MarekDIV
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
+
                         <tr class="first-row">
-                            <td>2017/2018</td>
+                            <td><i class="fas fa-chevron-down me-2"></i>2017/2018</td>
                             <td>Null</td>
                             <td>Standard</td>
                             <td>125</td>
@@ -86,20 +94,23 @@
                             <td>No</td>
                             <td>Null</td>
                         </tr>
-                        <tr class="hidden-row d-none">
-                            <td colspan=7>
-                                <div class="container">
+
+                        <tr class="hidden-row">
+                            <td class="p-0" colspan=7>
+                                <div class="container hidden-div hide-div">
                                     <div class="row">
                                         <div class="col-6">
                                             name:
                                         </div>
                                         <div class="col-6">
-                                            Marek
+                                            MarekDIV
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
+                        
+
                     </tbody>
                 </table>
             </div>
