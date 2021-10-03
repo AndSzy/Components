@@ -9,14 +9,24 @@
 /* Transition during showing/hiding hidden row */
 .hidden-row .hidden-div.hide-div {
     visibility: hidden;
-    transition: visibility 0s, height 0.2s linear;
-    height: 0;
+    transition: visibility 0s, max-height 0.5s ease-out;
+    max-height: 0;
 }
 
+/* single row height is 24px */
 .hidden-row .hidden-div {
-    height: 24px;
     visibility: visible;
-    transition: visibility 0.2s 0.2s, height 0.2s linear;
+    transition: visibility 0.5s 0.3s, max-height 0.4s linear;
+    max-height: 140px;
+}
+
+.hidden-row td {
+    padding: 0.5rem 0.5rem;
+    transition: padding 0.2s linear;
+}
+
+.hidden-row td.padding-0 {
+    padding: 0 0.5rem;
 }
 
 .fa-chevron-down {
@@ -26,5 +36,16 @@
 .fa-chevron-down.rotate {
     transform: rotate(-90deg);
     transition: all 0.2s linear;
+}
+
+/* speed-up/remove transition for smaller screens */
+@media screen and (max-width: 992px) {
+    .hidden-row .hidden-div {
+        max-height: 600px;
+        transition: visibility 0.5s 0.3s, max-height 0.4s linear;
+    }
+    .hidden-row .hidden-div.hide-div {
+        transition: visibility 0s, max-height 0.2s ease-out;
+    }
 }
 

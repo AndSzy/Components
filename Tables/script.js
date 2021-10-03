@@ -7,7 +7,7 @@ firstRows.forEach((row) => {
         if (sibling) {
 			let mytd = sibling.querySelector('td');
 			let mydiv = sibling.querySelector('.hidden-div');
-			mytd.classList.toggle('p-0');
+			mytd.classList.toggle('padding-0');
 			mydiv.classList.toggle('hide-div');
 			chevronIcon.classList.toggle('rotate');
         }

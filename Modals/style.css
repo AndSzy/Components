@@ -1,0 +1,33 @@
+#welcome-modal {
+    z-index: 9002;
+}
+#welcome-modal .modal-content {
+    border-radius: 0;
+}
+
+#welcome-modal .modal-header {
+    background-color: #25273A;
+    color: #fff;
+    padding: 5px 1rem;
+    border-radius: 0;
+}
+
+#welcome-modal .btn-close {
+    background: none;
+    color: #fff;
+    opacity: 1;
+    margin: -5px -15px 0 auto;
+}
+
+#welcome-modal .btn-close:hover {
+    opacity: 0.6;
+}
+
+#welcome-modal .btn-close:focus, #welcome-modal .btn-close:active {
+    outline: none;
+    box-shadow: none;
+}
+
+#welcome-modal .btn-close-modal {
+    float: right;
+}

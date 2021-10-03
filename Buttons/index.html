@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88e3276c80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5>Button with Dropdown and Inputs</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 dropdown-holder">
+                <p class="dropdown-label">
+                    Academic Year
+                </p>
+            </div>
+            <div class="col">
+                <div class="dropdown dropdown-holder checkbox-menu">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="academicYearDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                    <ul class="dropdown-menu academic-year-list" aria-labelledby="academicYearDropdown">
+                        <li class="active">
+                            <label>
+                                <input type="checkbox" checked value="2022-09-01"> 2021-22
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2021-09-01"> 2020-21
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2020-09-01"> 2019-20
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2019-09-01"> 2018-19
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2018-09-01"> 2017-18
+
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2017-09-01"> 2016-17
+
+
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h5>Button with Dropdown and Buttons</h5>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-3 dropdown-holder">
+                <p class="dropdown-label">Action</p>
+            </div>
+
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <button class="dropdown-item" type="button">Archive</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">Edit</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="../lib/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
