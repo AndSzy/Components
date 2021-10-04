@@ -1,14 +1,21 @@
-.dropdown-holder {
+/* Styling */
+.button-holder {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
-.dropdown-label {
-    margin: 0;
+.button-description {
+    font-size: 12px;
+}
+.button-description p {
+    text-align: center;
 }
 
-.checkbox-menu li label {
+
+/* 1. Dropdown with inputs */
+ .dropdown-checkboxes li label {
     display: block;
     padding: 3px 10px;
     clear: both;
@@ -20,38 +27,26 @@
     transition: background-color .4s ease;
 }
 
-.checkbox-menu li input {
+.dropdown-checkboxes li input {
     margin: 0px 5px;
     top: 2px;
     position: relative;
 }
 
-.checkbox-menu li.active label {
+.dropdown-checkboxes li.active label {
     background-color: #ced4da;
     font-weight:bold;
 }
 
-.checkbox-menu li label:hover,
-.checkbox-menu li label:focus {
+.dropdown-checkboxes li label:hover,
+.dropdown-checkboxes li label:focus {
     background-color: #f5f5f5;
 }
 
-.checkbox-menu li.active label:hover,
-.checkbox-menu li.active label:focus {
+.dropdown-checkboxes li.active label:hover,
+.dropdown-checkboxes li.active label:focus {
     background-color: #dee2e6;
 }
 
-.bottom-panel {
-    padding: 12px 14px;
-    border-top: 1px solid rgb(235, 235, 235);
-}
 
-.bottom-panel-inside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right-button-holder {
-    margin-left: auto;
-}
+/* 2. Dropdown with Buttons */
