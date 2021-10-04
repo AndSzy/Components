@@ -74,3 +74,21 @@
 .dropdown-checkboxes.green-color li.active label:focus {
     background-color: #157347;
 }
+
+/* Dropdown with Buttons - Dark Color */
+
+.dropdown-menu.dark-color {
+    background-color: #212529;
+}
+
+.dropdown-menu.dark-color .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu.dark-color .dropdown-item:hover {
+    background-color: #1c1f23;
+}
+
+.dropdown-menu.dark-color .dropdown-item:focus {
+    background-color: #1c1f23;
+}
