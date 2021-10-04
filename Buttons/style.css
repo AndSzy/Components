@@ -14,7 +14,7 @@
 }
 
 
-/* 1. Dropdown with inputs */
+/* Dropdown with inputs */
  .dropdown-checkboxes li label {
     display: block;
     padding: 3px 10px;
@@ -24,7 +24,7 @@
     color: #333;
     white-space: nowrap;
     margin:0;
-    transition: background-color .4s ease;
+    transition: background-color 0.4s ease;
 }
 
 .dropdown-checkboxes li input {
@@ -49,4 +49,28 @@
 }
 
 
-/* 2. Dropdown with Buttons */
+/* Dropdown with inputs - Green color */
+.dropdown-checkboxes.green-color li label {
+    color: grey;
+}
+
+.dropdown-checkboxes.green-color li label:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+.dropdown-checkboxes.green-color li.active label {
+    color: #fff;
+    background-color: #198754;
+    font-weight:bold;
+} */
+
+.dropdown-checkboxes.green-color li label:hover,
+.dropdown-checkboxes.green-color li label:focus {
+    background-color: #157347;
+}
+
+.dropdown-checkboxes.green-color li.active label:hover,
+.dropdown-checkboxes.green-color li.active label:focus {
+    background-color: #157347;
+}

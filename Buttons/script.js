@@ -1,8 +1,8 @@
-// 1. Dropdown with inputs
+// // // Dropdown with inputs
 
 // keep an .active class when inbox checked - css style
 
-const inputElements = document.querySelectorAll('#dropdown-inputs input[type=checkbox]');
+const inputElements = document.querySelectorAll('.dropdown-checkboxes input[type=checkbox]');
 
 inputElements.forEach((input) => {
     input.addEventListener('change', () => {
