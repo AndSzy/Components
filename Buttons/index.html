@@ -16,22 +16,20 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h5>Button with Dropdown and Inputs</h5>
+                <h2 class="text-center">Buttons</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3 dropdown-holder">
-                <p class="dropdown-label">
-                    Academic Year
-                </p>
-            </div>
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
             <div class="col">
-                <div class="dropdown dropdown-holder checkbox-menu">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="academicYearDropdown"
+
+                <div class="dropdown dropdown-checkboxes button-holder">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-calendar"></i>
                     </button>
-                    <ul class="dropdown-menu academic-year-list" aria-labelledby="academicYearDropdown">
+                    <ul class="dropdown-menu">
                         <li class="active">
                             <label>
                                 <input type="checkbox" checked value="2022-09-01"> 2021-22
@@ -71,21 +69,70 @@
 
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h5>Button with Dropdown and Buttons</h5>
-            </div>
-        </div>
-        <div class="row">
 
-            <div class="col-3 dropdown-holder">
-                <p class="dropdown-label">Action</p>
-            </div>
 
+                <div class="button-description">
+                    <p>Dropdown with Checkboxes</p>
+                </div>
+
+
+
+            </div>
             <div class="col">
-                <div class="dropdown">
+                <div class="dropdown dropdown-checkboxes green-color button-holder">
+                    <button class="btn btn-success dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2">Academic Year</span>
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="active">
+                            <label>
+                                <input type="checkbox" checked value="2022-09-01"> 2021-22
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2021-09-01"> 2020-21
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2020-09-01"> 2019-20
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2019-09-01"> 2018-19
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2018-09-01"> 2017-18
+
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2017-09-01"> 2016-17
+
+
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="button-description">
+                    <p>Dropdown with Checkboxes</p>
+                </div>             
+            </div>
+            <div class="col">
+                <div class="dropdown button-holder">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         <i class="fas fa-cog"></i>
                     </button>
@@ -98,11 +145,33 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="button-description">
+                    <p>Dropdown with Buttons</p>
+                </div>
             </div>
+            <div class="col">
+                <div class="dropdown button-holder">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <span class="me-2">User</span>
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu dark-color">
+                        <li>
+                            <button class="dropdown-item" type="button">Settings</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">Log Out</button>
+                        </li>
+                    </ul>
+                </div>
 
-
-
+                <div class="button-description">
+                    <p>Dropdown with Buttons</p>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <script src="../lib/bootstrap.bundle.min.js"></script>
